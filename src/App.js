@@ -83,7 +83,7 @@ function App() {
       </div>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {filteredCountries.map((country) => (
-        <div key={country.cca3} style={cardStyle}>
+        <div key={country.cca3} className="countryCard" style={cardStyle}>
           <img
             src={country.flags.png}
             alt={`Flag of ${country.name.common}`}
